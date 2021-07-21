@@ -8,12 +8,23 @@
 
 
 
+
+
+
 \begin{document}
 \maketitle
+\tableofcontents
 
 \chapter{Linux}
+\section{Bash}
+\verb|C^r (Control+r)| ricerca ricorsiva dei comandi usati in precedenza.\\
+
+\noindent \verb|passwd| cambia la password dell'utente corrente\\
+
+\noindent \verb|whoami| mostra l'utente corrente.
 \section{Installazione}
 empty
+\newpage
 \section{Package Manager}
 \subsection{Debian-based (Aptitude)}
 \noindent Aggiornare i repository:
@@ -32,11 +43,65 @@ empty
 
 \verb|apt-cache search *keyword*|\\
 
+\noindent Rimuovere un pacchetto installato (mantiene i file di configurazione):
+
+\verb|sudo apt-get remove *nome pacchetto*|\\
+
+\noindent Rimuovere un pacchetto installato E i file di configurazione:
+
+\verb|sudo apt-get purge *nome pacchetto*|\\
+
+\noindent Rimuovere dipendenze non più necessarie:
+
+\verb|sudo apt-get autoremove|\\
+
+\noindent 
+\newpage
+
+\section{Controllo dei servizi}
+\verb|systemctl| è il daemon responsabile del controllo dei servizi disponibili sulle macchine che usano systemd.\\
+
+\noindent \verb|systemctl status *nome servizio*| mostra lo stato del servizio desiderato con le ultime righe del log.\\
+
+\noindent \verb|sudo systemctl restart/stop *nome servizio*| riavvia/ferma il servizio desiderato.\\
+
+\noindent \verb|sudo systemctl enable/disable *nome servizio*| abilita o disabilita il servizio specificato.
 
 
 
+\newpage
+\section{Editor di testo}
+\subsection{VIM}
+Aprire un file esistente (o crearlo se non esiste):
 
+\verb|vim *nome file*|\\
 
+\noindent Comandi più usati
+
+\verb|a| per iniziare a scrivere DOPO il cursore:
+
+\verb|i| per iniziare a scrivere SUL cursore:
+
+\verb|A (shift+a)| per iniziare a scrivere alla fine della frase su cui si trova il cursore
+
+\verb|gg| per spostare il cursore alla prima riga del file
+
+\verb|G (shift+g)| per spostare il cursore all'ultima riga del file
+
+\verb|:q| esci senza salvare (verrà chiesto di scrivere \verb|:q!| per uscire senza salvare se si è modificato il file)
+
+\verb|:w| salva il file/le modifiche
+
+\verb|:wq| salva il file/le modifiche ed esci
+
+\verb|:term| divide lo schermo orizzontalmente e apre un terminale. \verb|C^W w (control+w w)| per passare dal terminale a VIM e viceversa. \verb|C^d| per chiudere la schermata su cui siamo (tipo il terminale).
+
+\subsubsection{.vimrc}
+E' il file che mantiene le impostazioni da utilizzare globalmente su VIM ogni volta che si apre un file. Si deve creare nella propria home directory.\\
+
+Impostazioni utili da usare nel .vimrc:\\
+\verb|set number| per  mostrare il numero della riga a lato.\\
+\verb||
 
 
 \chapter{title}
