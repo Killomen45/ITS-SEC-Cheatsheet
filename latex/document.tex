@@ -17,7 +17,15 @@
 
 \chapter{Linux}
 \section{Bash}
-\verb|C^r (Control+r)| ricerca ricorsiva dei comandi usati in precedenza.\\
+
+I file di configurazione della shell sono contenuti nella home directory dell'utente nel file \verb|.bashrc|\\
+
+\noindent \verb|C^r (Control+r)| ricerca ricorsiva dei comandi usati in precedenza.\\
+
+\noindent Concatenazione di stringhe:\\
+\noindent \verb|&&| esegue il primo comando, se esce con esito positivo esegue quello dopo, es:
+\verb|sudo apt-get update && sudo apt-get upgrade| \\
+
 
 
 \section{Installazione}
@@ -74,7 +82,18 @@ Di seguito una lista di programmi utili disponibili su quasi tutte le distribuzi
 
 \noindent stampare a schermo senza un visualizzatore di testo:\\
 \noindent \verb|cat *file*|\\
-In genere utilizzato insieme a \verb|grep| per filtrare l'output con una parola desiderata.
+In genere utilizzato insieme a \verb|grep| per filtrare l'output con una parola desiderata.\\
+
+\noindent per vedere da quanto tempo è accesa la macchina:\\
+\noindent \verb|uptime|, generalmente utilizzato con \verb|--pretty| per un output più human readable.\\
+
+\noindent visualizzare la RAM disponibile e occupata:\\
+\verb|free| utilizzato in genere con \verb|-h|\\
+
+\noindent task manager:\\
+\noindent \verb|top| o la versione fatta meglio \verb|htop|
+
+\noindent 
 
 
 
