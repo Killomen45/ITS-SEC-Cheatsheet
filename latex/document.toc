@@ -3,9 +3,10 @@
 \contentsline {section}{\numberline {1.2}Installazione}{2}{}%
 \contentsline {section}{\numberline {1.3}Package Manager}{3}{}%
 \contentsline {subsection}{\numberline {1.3.1}Debian-based (Aptitude)}{3}{}%
-\contentsline {section}{\numberline {1.4}Controllo dei servizi}{4}{}%
-\contentsline {section}{\numberline {1.5}Editor di testo}{5}{}%
-\contentsline {subsection}{\numberline {1.5.1}VIM}{5}{}%
+\contentsline {section}{\numberline {1.4}Programmi generali}{4}{}%
+\contentsline {section}{\numberline {1.5}Controllo dei servizi}{4}{}%
+\contentsline {section}{\numberline {1.6}Editor di testo}{5}{}%
+\contentsline {subsection}{\numberline {1.6.1}VIM}{5}{}%
 \contentsline {subsubsection}{.vimrc}{5}{}%
 \contentsline {chapter}{\numberline {2}title}{6}{}%
 \contentsline {chapter}{\numberline {3}title}{7}{}%

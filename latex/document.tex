@@ -19,9 +19,7 @@
 \section{Bash}
 \verb|C^r (Control+r)| ricerca ricorsiva dei comandi usati in precedenza.\\
 
-\noindent \verb|passwd| cambia la password dell'utente corrente\\
 
-\noindent \verb|whoami| mostra l'utente corrente.
 \section{Installazione}
 empty
 \newpage
@@ -31,7 +29,7 @@ empty
 
 \verb|sudo apt-get update|\\
 
-\noindent Aggiornare i pacchetti installati:
+\noindent Aggiornare i pacchetti installati: aa
 
 \verb|sudo apt-get upgrade|\\
 
@@ -57,6 +55,28 @@ empty
 
 \noindent 
 \newpage
+
+\section{Programmi generali}
+
+Di seguito una lista di programmi utili disponibili su quasi tutte le distribuzioni già di default.\\
+
+\noindent cambia la password dell'utente corrente. Con sudo cambia la password di root.\\
+
+\noindent \verb|passwd| \\
+
+\noindent \verb|sudo passwd *nome utente*| cambia la password dell'utente specificato.\\
+
+\noindent mostrare l'utente corrente.\\
+\noindent \verb|whoami| \\
+
+\noindent Visualizzare il testo di un file:\\
+\noindent \verb|less *file*|\\
+
+\noindent stampare a schermo senza un visualizzatore di testo:\\
+\noindent \verb|cat *file*|\\
+In genere utilizzato insieme a \verb|grep| per filtrare l'output con una parola desiderata.
+
+
 
 \section{Controllo dei servizi}
 \verb|systemctl| è il daemon responsabile del controllo dei servizi disponibili sulle macchine che usano systemd.\\
